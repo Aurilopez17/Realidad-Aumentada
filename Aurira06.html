@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Animación</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+        <a-plane position="0 -2 -6" rotation="-90 0 0" width="4" height="4" color="#ffb4b4" shadow></a-plane>
+        <a-plane position="-2 -2 -3" rotation="0 90 0" width="4" height="4" color="#9a9af5" shadow></a-plane>
+        <a-plane position="2 -2 -3" rotation="0 -90 0" width="4" height="4" color="#4242ff" shadow></a-plane> 
+        <a-plane position="0 -4 -3" rotation="-90 0 0" width="4" height="4" color="violet" shadow></a-plane>
+        <a-plane position="0 0 -3" rotation="-90 0 0" width="4" height="4" color="lightblue" shadow></a-plane>
+        <a-box position="0 0.5 -6" material="opacity: 0.5" side="double" color="#48019b" shadow> 
+            <a-animation attribute="rotation" to="360 0 0" dur="5000" easing='linear' repeat="indefinite"></a-animation>
+        </a-box>
+        <a-box position="0 0.5 -6" rotation="0 0 45" material="opacity: 0.5" side="double" color="#48019b" shadow>
+             <a-animation attribute="rotation" to="0 0 360" dur="5000" easing='linear' repeat="indefinite"></a-animation>
+        </a-box>
+        <a-sphere position="0 0.5 -6" radius="1.25" material="opacity: 0.3" color="#b4ffff" shadow>
+            <a-animation attribute="scale" begin="0" to="2 2 2"></a-animation>
+        </a-sphere>
+      <a-cylinder position="0 -2 -6" height="0.5" color="red" shadow></a-cylinder>
+  </a-scene>  
+</body>
+</html>
