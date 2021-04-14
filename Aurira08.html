@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Cara 3D</title>
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+          <a-assets>
+            <a-asset-item id="cara-obj" src="./Cara/Aurora.obj"></a-asset-item>
+            <a-asset-item id="cara-mtl" src="./Cara/Aurora.mtl"></a-asset-item>
+          </a-assets>
+         <a-entity obj-model="obj: #cara-obj; mtl: #cara-mtl" scale="0.01 0.01 0.01" rotation="-90 0 0" position="3 1.5 -4">
+            <a-animation attribute="rotation" begin="1000" to="360 360 0" dur="30000" easing='linear' repeat="indefinite"></a-animation>
+            <a-animation attribute="scale" begin="1000" to="0.006 0.006 0.006"></a-animation>
+            <a-animation attribute="position" to="0 1.5 -4" dur= "2000" easing="linear"></a-animation>
+          </a-entity>
+          <a-sky color="black"></a-sky>
+          <a-camera fov="60" position="0 2 1"></a-camera>
+        </a-scene>
+    </body>
+</html>
