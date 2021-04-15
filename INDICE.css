@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;ç
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header,footer{
+    background-color: #d7baff;
+    padding: 25px;
+    color: white;
+    text-align: center;
+}
+
+nav{
+    display: grid;
+    grid-auto-flow:row;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+nav>a{
+    padding:62px;
+    text-decoration: none;
+    background-color: beige;
+    color:white;
+    transition: all 1s ease
+}
+
+nav>a:hover{
+    transform: scale(1.2);
+    background-color: #dbdbdb;
+}
+
+footer{
+    clear: both;
+    bottom: 0px;
+    width: 100%;
+}
